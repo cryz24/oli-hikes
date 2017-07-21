@@ -1,3 +1,2 @@
 # oli-hikes
 hiking adventures
-
