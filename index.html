@@ -3,11 +3,39 @@
 <head>
   <title>Chris Guzman's Adventures</title>
   <meta charset="utf-8"/>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="C:\Users\jane\Desktop\My Hikes\main.css">
+  
+  <link rel="stylesheet" type="text/css" href="C:\Users\jane\Desktop\oli-hikes\main.css">
+  <script type='text/javascript' src='changebg.js'></script>
+
+<!-- 
+
+<script type='text/javascript'>
+
+var images = [], x = -1;
+  images[0] = "url('pics/calico 1.jpg')";
+  images[1] = "url('pics/calico 2.jpg')";
+  images[2] = "url('pics/calico 3.jpg')";
+  images[3] = "url('pics/cape falcon.jpg')";
+
+function displayNextImage() {
+  x = (x === images.length - 1) ? 0 : x + 1;
+  document.getElementById("jumbotron").style.backgroundImage = images[x];
+}
+function changeImage() {
+   setInterval(displayNextImage, 5000);
+}
+</script>
+
+-->
+
 </head>
-<body>
+
+<body onload="changeImage()">
+
   <header class="container">
     <div class="row">
       <h1 class="col-sm-4">My Hikes</h1>
@@ -19,7 +47,7 @@
     </div>
   </header>
 
-  <section class="jumbotron">
+  <section class="jumbotron" id="jumbotron">
     <div class="container">
       <div class="row text-center">
               <h2>All About Hiking</h2>
@@ -33,21 +61,21 @@
   <div class="row">
     <figure class="col-sm-6">
     <p>washington</p>
-    <img src="C:\Users\jane\Desktop\My Hikes\pics\mount rainier rampart ridge view.jpg">
+    <img src="C:\Users\jane\Desktop\oli-hikes\pics\mount rainier rampart ridge view.jpg">
     </figure>
     <figure class="col-sm-6">
     <p>oregon</p>
-    <img src="C:\Users\jane\Desktop\My Hikes\pics\punch bowl.jpg">
+    <img src="C:\Users\jane\Desktop\oli-hikes\pics\punch bowl.jpg">
     </figure>
   </div>
   <div class="row">
     <figure class="col-sm-6">
     <p>nevada</p>
-    <img src="C:\Users\jane\Desktop\My Hikes\pics\valley of fire entry.jpg">
+    <img src="C:\Users\jane\Desktop\oli-hikes\pics\valley of fire entry.jpg">
     </figure>
     <figure class="col-sm-6">
     <p>california</p>
-    <img src="C:\Users\jane\Desktop\My Hikes\pics\andreas canyon palms.jpg">
+    <img src="C:\Users\jane\Desktop\oli-hikes\pics\andreas canyon palms.jpg">
     </figure>
   </div>
 </section>
@@ -57,13 +85,13 @@
     <p class="col-sm-4">&copy; 2017 Chris Guzman's Hikes</p>
 <ul class="col-sm-8">
   <li class="col-sm-1">
-  <img src="C:\Users\jane\Desktop\My Hikes\pics\twitter-logo-transparent.png">
+  <img src="C:\Users\jane\Desktop\oli-hikes\pics\twitter-logo-transparent.png">
 </li>
   <li class="col-sm-1">
-  <img src="C:\Users\jane\Desktop\My Hikes\pics\facebook-logo-transparent.jpg">
+  <img src="C:\Users\jane\Desktop\oli-hikes\pics\facebook-logo-transparent.jpg">
 </li>
   <li class="col-sm-1">
-  <img src="C:\Users\jane\Desktop\My Hikes\pics\instagram-logo-transparent.jpg">
+  <img src="C:\Users\jane\Desktop\oli-hikes\pics\instagram-logo-transparent.jpg">
 </li>
 </ul>
   </div>

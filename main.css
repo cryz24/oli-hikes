@@ -31,12 +31,11 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('C:/Users/jane/Desktop/My Hikes/pics/lake melakwa.jpg');
-  background-size: cover;
+  background-image: url('C:/Users/jane/Desktop/oli-hikes/pics/lake melakwa.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
-  background-size: 1180px 960px;
+  background-size: 1300px, 1100px;
   background-repeat: no-repeat;
   color: #ffffff;
   height: 500px;
@@ -64,23 +63,26 @@ section .row img {
   margin: 0 0 30px;
 }
 
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
+.btn-default {
+  border:1px solid #333;
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 16px 40px; 
 }
 
 footer {
