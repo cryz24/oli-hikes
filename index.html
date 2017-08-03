@@ -11,8 +11,10 @@
   <link rel="stylesheet" type="text/css" href="C:\Users\jane\Desktop\oli-hikes\main.css">
   <script type='text/javascript' src='changebg.js'></script>
 
-<!-- 
+<link rel='stylesheet' type='text/css' href='menu.css'/>
+<script type='text/javascript' src='toggle.js'></script>
 
+<!-- 
 <script type='text/javascript'>
 
 var images = [], x = -1;
@@ -29,14 +31,17 @@ function changeImage() {
    setInterval(displayNextImage, 5000);
 }
 </script>
-
 -->
 
 </head>
 
 <body onload="changeImage()">
-
-  <header class="container">
+<div class="hamburger_button" onclick="myFunction(this)" />
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+  <header class="container" style="margin-left:55px;" onclick="myFunction(this)">
     <div class="row">
       <h1 class="col-sm-4">My Hikes</h1>
       <nav class="col-sm-8 text-right">
