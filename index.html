@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chris Guzman's Adventures</title>
+  <title>chris guzman's adventures</title>
   <meta charset="utf-8"/>
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  
-  <link rel="stylesheet" type="text/css" href="C:\Users\jane\Desktop\oli-hikes\main.css">
-  <script type='text/javascript' src='changebg.js'></script>
+  <link rel="stylesheet" type="text/css" href='main.css'>
+  <link rel='stylesheet' type='text/css' href='overlay.css'/>
+  <script type='text/javascript' src='magic.js'></script>
 
-<link rel='stylesheet' type='text/css' href='menu.css'/>
-<script type='text/javascript' src='toggle.js'></script>
 
-<!-- 
-<script type='text/javascript'>
-
-var images = [], x = -1;
-  images[0] = "url('pics/calico 1.jpg')";
-  images[1] = "url('pics/calico 2.jpg')";
-  images[2] = "url('pics/calico 3.jpg')";
-  images[3] = "url('pics/cape falcon.jpg')";
-
-function displayNextImage() {
-  x = (x === images.length - 1) ? 0 : x + 1;
-  document.getElementById("jumbotron").style.backgroundImage = images[x];
-}
-function changeImage() {
-   setInterval(displayNextImage, 5000);
-}
-</script>
--->
 
 </head>
 
 <body onload="changeImage()">
-<div class="hamburger_button" onclick="myFunction(this)" />
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="arizona trails.html">arizona</a>
+    <a href="california trails.html">california</a>
+    <a href="nevada trails.html">nevada</a>
+    <a href="oregon trails.html">oregon</a>
+    <a href="utah trails.html">utah</a>
+    <a href="washington trails.html">washington</a>
+    
+    <!--
+    My wishlist, use state flags as icons to access links...
+    
+    <a href="#"><img src="pics/arizona.png" width="241" height="123"></a>
+    <a href="#"><img src="pics/california.png" width="241" height="123"></a>
+    <a href="#"><img src="pics/nevada.png" width="241" height="123"></a>
+    <a href="#"><img src="pics/oregon.png" width="241" height="123"></a>
+    <a href="#"><img src="pics/utah.png" width="241" height="123"></a>
+    <a href="#"><img src="pics/washington.png" width="241" height="123"></a>
+    -->
+
+<footer class="container">
+  <div class="row">
+  <p class="col-sm-4"></p>
+<ul class="col-sm-8">
+  <li class="col-sm-1">
+  <a href="https://twitter.com" target="_blank"><img src="pics\white_twitter.png"></a>
+</li>
+  <li class="col-sm-1">
+  <a href="https://www.facebook.com/" target="_blank"><img src="pics\white_facebook.png"></a>
+</li>
+  <li class="col-sm-1">
+  <a href="https://www.instagram.com/" target="_blank"><img src="pics\white_instagram.png"></a>
+</li>
+</ul>
+  </div>
+</footer>
+  </div>
 </div>
-  <header class="container" style="margin-left:55px;" onclick="myFunction(this)">
+
+<div class="menu_button" onclick="openNav()">&#9776;</div>
+
+ <header class="container" style="margin-left:55px;" onclick="myFunction(this)">
     <div class="row">
-      <h1 class="col-sm-4">My Hikes</h1>
+      <h1 class="col-sm-4">my hikes</h1>
       <nav class="col-sm-8 text-right">
-      <p>trails hiked</p>
-      <p>hikes on wishlist</p>
-      <p>questions, suggestions and comments</p>
+
+      <p><a href="skyline_trail.html">trails hiked</a></p>
+      <p><a href="#">hikes on wishlist</a></p>
+      <p><a href="#">questions, suggestions and comments</a></p>
+  
       </nav>
     </div>
   </header>
@@ -55,9 +74,9 @@ function changeImage() {
   <section class="jumbotron" id="jumbotron">
     <div class="container">
       <div class="row text-center">
-              <h2>All About Hiking</h2>
-      <h3>My Favorite Trails</h3>
-      <a class="btn btn-primary" href="#" role="button">See all</a>
+              <h2>all about hiking</h2>
+      <h3>my favorite trails</h3>
+      <a class="btn btn-primary" href="#" role="button">see all</a>
 
       </div>
     </div>
@@ -66,37 +85,37 @@ function changeImage() {
   <div class="row">
     <figure class="col-sm-6">
     <p>washington</p>
-    <img src="C:\Users\jane\Desktop\oli-hikes\pics\mount rainier rampart ridge view.jpg">
+    <img src="pics\mount rainier rampart ridge view.jpg">
     </figure>
     <figure class="col-sm-6">
     <p>oregon</p>
-    <img src="C:\Users\jane\Desktop\oli-hikes\pics\punch bowl.jpg">
+    <img src="pics\punch bowl.jpg">
     </figure>
   </div>
   <div class="row">
     <figure class="col-sm-6">
     <p>nevada</p>
-    <img src="C:\Users\jane\Desktop\oli-hikes\pics\valley of fire entry.jpg">
+    <img src="pics\valley of fire entry.jpg">
     </figure>
     <figure class="col-sm-6">
     <p>california</p>
-    <img src="C:\Users\jane\Desktop\oli-hikes\pics\andreas canyon palms.jpg">
+    <img src="pics\andreas canyon palms.jpg">
     </figure>
   </div>
 </section>
   
 <footer class="container">
   <div class="row">
-    <p class="col-sm-4">&copy; 2017 Chris Guzman's Hikes</p>
+    <p class="col-sm-4">&copy; 2017 chris guzman's hikes</p>
 <ul class="col-sm-8">
   <li class="col-sm-1">
-  <img src="C:\Users\jane\Desktop\oli-hikes\pics\twitter-logo-transparent.png">
+  <a href="https://twitter.com" target="_blank"><img src="pics\twitter-logo-transparent.png"></a>
 </li>
   <li class="col-sm-1">
-  <img src="C:\Users\jane\Desktop\oli-hikes\pics\facebook-logo-transparent.jpg">
+  <a href="https://www.facebook.com/" target="_blank"><img src="pics\facebook-logo-transparent.jpg"></a>
 </li>
   <li class="col-sm-1">
-  <img src="C:\Users\jane\Desktop\oli-hikes\pics\instagram-logo-transparent.jpg">
+  <a href="https://www.instagram.com/" target="_blank"><img src="pics\instagram-logo-transparent.jpg"></a>
 </li>
 </ul>
   </div>

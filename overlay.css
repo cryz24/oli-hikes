@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+------------------------
+position the menu/open
+button (top left corner)
+------------------------
+*/
+
+.menu_button {
+    position: absolute;
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+    left: 20px;
+    top: 15px;
+}
+
+/* 
+------------------
+hover effect added
+to the menu button
+------------------
+*/
+.menu_button :hover, .menu_button a:focus {
+    opacity: 10%;
+}
+
+/*
+---------------------------------------
+the full screen overlay navigation menu
+---------------------------------------
+*/
+.overlay {
+    height: 0%;  /* 0% height - change this with javascript */
+    width: 100%; /* 100% full-width */
+    position: fixed;  /* stay in place */
+    z-index: 1;  /* stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);  /* color set to black */
+    background-color: rgba(0,0,0, 0.9);  /* color set to 0.9 opacity */
+    overflow-y: hidden;  /* disable vertical scroll */
+    transition: 0.5s;  /* 0.5 seconds transition effect to slide in the full screen overlay navigation */
+}
+
+/*
+------------------
+display menu links
+------------------
+*/
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*
+---------------------
+navigation menu links
+---------------------
+*/
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* 
+----------------------------------
+when you mouse over the navigation
+links, change their color
+----------------------------------
+*/
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* 
+--------------------------
+position & style the close
+button (top right corner)
+--------------------------
+*/
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* 
+--------------------------------
+on smaller screens, where 
+height is less than 450px, 
+change the style of the full
+screen overlay navigation (less 
+padding and a smaller font size)
+--------------------------------
+*/
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
