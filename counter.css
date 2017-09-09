@@ -1,0 +1,47 @@
+div.container {
+    width: 100%;
+    border: 1px solid lightslategray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------*/
+/* Counter */
+/*------------------------------------------------------------------*/
+
+.counter-group {
+    position: relative;
+}
+
+.counter-group {
+    position: relative;
+}
+
+.counter-icon {
+    display: inline-block;
+    font-size: 38px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.counter-content {
+    display: inline-block;
+    text-align: left;
+}
+
+.counter-title {
+    font-family: inherit;
+    font-size: 60px !important;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.counter-sub-title {
+    margin-bottom: 0;
+}
